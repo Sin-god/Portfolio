@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = parseInt(prompt("число",""));
+        var y=[];
+        var a=0;
+
+        while (x!=0) {
+    y.push(x % 10);
+    x = Math.floor(x/10);
+}
+y.reverse();
+
+
+
+for(i=0;i<3;i++){
+    for(j=1;j<3;j++){
+        if(y[i]==y[j]){
+        a++;
+        }
+        
+    }
+    break;
+}
+
+        if(a>0){
+        alert("Є однакові цифри")
+        }
+        else{
+        alert("Немає однакових цифр")
+        }
+          
+       
+
+       
+            
+      
+     </script>
+
+    
+
+</body>
+</html>

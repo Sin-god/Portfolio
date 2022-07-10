@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: static;
+}
+h1{
+    color:white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.right{
+    height: 200px;
+}
+.center{
+    padding: 40px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+   
+    width: 75%;
+}
+.com{
+    background-color: rgb(233, 4, 138);
+    margin: 5px;
+}
+p{
+    color: white;
+}
+.header{
+    background-color: rgb(196, 0, 114);
+}
+.menu{
+    background-color: rgb(165, 0, 96); 
+}
+.sect{
+    background-color: rgba(165, 0, 96,0.7); 
+    margin-top: 5px;
+    padding: 15px;
+}

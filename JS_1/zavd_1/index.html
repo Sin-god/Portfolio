@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var x = parseInt(prompt("введіть число"));
+      var y=[];
+      let sum=0
+    
+while (x > 0) {
+    y.push(x % 10);
+    x = parseInt(x / 10);
+}
+    y.reverse();
+    console.log(y)
+    
+    let long=y.length
+
+   console.log(long)
+
+   for(i=0;i<long;i++){
+       sum+=y[i]
+   }
+   console.log(sum)
+
+   y.reverse();
+    console.log(y)
+
+
+
+      
+
+
+       
+    
+      
+     </script>
+
+    
+
+</body>
+</html>

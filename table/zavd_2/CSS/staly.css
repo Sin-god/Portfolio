@@ -1,0 +1,47 @@
+.main{
+  display: flex;
+  flex-direction: row;
+}
+
+.content{
+  z-index: -1;
+  margin-left: 110px; 
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+img{
+  width: 100px;
+}
+.AMG{
+  display: flex;
+}
+
+span{
+
+  align-self:center;
+  color: bisque;
+  text-decoration: none;
+  cursor: initial;
+  display: none;
+  margin-right: 15px;
+  z-index: 1;
+}
+.VM{
+  flex-direction: column;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+}
+.VM:hover span{
+  display: flex;
+  margin-right: 50px;
+}
+
+.AMG:hover{
+  background-color: grey;
+}
+ strong{  
+  align-self: center;
+color: bisque;
+}

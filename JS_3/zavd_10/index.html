@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+ 
+ var x = prompt("Загадайте число")
+ let prom=100;
+ let n=50;
+ let pochatok=0;
+
+
+
+
+
+ while(Math.trunc(n)!=x){
+    y = confirm("Ваше число > N"+Math.trunc(n))
+    console.log(y)
+    if(y==true){
+        pochatok=n;
+        n=(pochatok+prom)/2
+        
+    }
+    else{
+        prom=n;
+        n=(pochatok+prom)/2
+        Math.trunc(n);
+    }
+    if(Math.trunc(n)==x){
+        alert("Ваше число"+Math.trunc(n) )
+    }
+}
+
+ 
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*   var x = parseInt(prompt("Число"));
+    var z = parseInt(prompt("на скільки здвинути?"));
+    var y = []
+    var chislo = 0
+    while (x > 1) {
+        ost = x % 10;
+        x /= 10
+        y.push(Math.trunc(ost))
+    }
+
+
+    for (var i = 0; i < z; i++) {
+        y.unshift(y.pop());
+    }
+
+    y.reverse();
+
+
+    long = parseInt(y.length)
+
+
+    for (j = 0; j < long; j++) {
+        chislo += y[j]
+        if (j < long - 1) {
+            chislo *= 10
+        }
+    }
+    
+
+
+alert(chislo)
+*/
+</script>
+
+</html>

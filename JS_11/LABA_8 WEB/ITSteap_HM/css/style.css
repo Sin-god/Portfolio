@@ -1,0 +1,16 @@
+.obg{
+    width: 200px;
+    height: 200px;
+    border: black solid 1px;
+    margin: 5px;
+    
+    display: inline-block;
+}
+
+#btn{
+width:50px;
+}
+body{
+    overflow: scroll;
+    height: 900px;
+}

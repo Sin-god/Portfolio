@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: static;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 200px;   
+}
+.con{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+img{
+    height: 50px;
+}
+.con:hover{
+    background-color: rgb(104, 104, 104);
+}

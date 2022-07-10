@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: static;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+   
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    border: solid grey 1px;
+    padding: 5px;
+    border-radius: 7px;
+    margin: 5px;
+    height: 250px;
+}
+span{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    border-top: solid black 1px;
+}

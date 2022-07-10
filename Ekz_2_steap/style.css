@@ -1,0 +1,14 @@
+#main{
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.a{
+    width: 333px;
+    height: 100px;
+   border: solid rgb(188, 206, 24) 2px;
+   margin: 0.5px;
+}

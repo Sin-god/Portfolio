@@ -1,0 +1,47 @@
+body{
+  font-family: serif;
+  background: #236e5e;
+  margin: 0;
+  color: white;
+}
+img{
+  height: 55px;
+  width: 55px;
+}
+.bot{
+  display: flex;
+  align-items: center;
+}
+.left{
+  display: flex;
+  margin: 0 20px;
+}
+.right{
+  display: flex;
+  
+}
+.aa{
+  margin: 0 5px;
+
+}
+.main{
+  margin: 70px 70px;
+}
+
+span{
+  color:gray;
+  
+}
+@media (max-width: 600px){
+  .left{
+    flex-direction: column;
+  }
+  .right{
+    flex-direction: column;
+  }
+  img{
+    height: 100px;
+    width: 100px;
+  }
+ 
+}

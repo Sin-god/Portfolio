@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+ function ur(x){
+     let y=x
+     sum=1;
+     let i=2
+    while(i<y){
+  if (x%i==0) {
+    sum+=i;
+     i++;
+   console.log(sum)
+  }else i++
+  
+}
+ 
+
+    if(sum==y) return true;
+    else return false
+}
+function ula(min,max){
+let y=[]
+    for(i=min;i<=max;i++){
+        let a =ur(i)
+        if(a==true){
+            y.push(i)
+        }
+
+    }
+    return y
+}
+
+
+ var min = parseInt(prompt("число_1"));
+ var max = parseInt(prompt("число_2"));
+
+  let z = ula(min,max)
+  alert(z)
+
+
+
+
+
+
+
+
+
+
+   /* let ost;
+    
+    while (x > 1) {
+        ost = x % 10;
+        x /= 10
+        y.push(Math.trunc(ost))
+    }
+y.reverse()
+
+*/
+
+
+
+</script>
+
+</html>

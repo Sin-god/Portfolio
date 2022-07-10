@@ -1,0 +1,562 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+hr{
+    margin: 0;
+}
+.ll{
+display: flex;
+}
+.ff{
+display: flex;
+
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+
+}
+
+.left a{
+    display: flex;
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+}
+.right img{
+    height: 20px;
+    margin-left: 20px;
+}
+.right{
+    margin-left: 550px;
+}
+.main img{
+    height: 400px;
+    
+}
+
+.main{
+    border-top: 1px solid rgba(7, 8, 8, 0.5);
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 150px;
+   
+}
+
+.c{
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.l{
+    margin-top: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+
+}
+.l button{
+    width: 75px;
+    border-radius: 4px;
+    height: 35px;
+    opacity:0.5;
+    background: none;
+    border: 1px black solid;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery img{
+    height: 200px;
+    float: left;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.com{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 110px;
+}
+.yach{
+    
+   
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 5px;
+}
+
+.yach img{
+    align-self: center;
+    
+}
+.one{
+    border: solid 1px rgba(0,0,0,0.5);
+    border-top:  none;
+    border-left:  none;
+}
+.two{
+    border: solid 1px rgba(0,0,0,0.5);
+    border-top:  none;  
+    border-left:  none;
+}
+.three{
+    border: solid 1px rgba(0,0,0,0.5);
+    border-top:  none;  
+    border-left:  none;
+    border-right: none;  
+}
+.four{
+    border: solid 1px rgba(0,0,0,0.5);
+    border-top:  none;  
+    border-left:  none;
+    border-bottom:none;
+}
+.five{
+    border: solid 1px rgba(0,0,0,0.5);
+    border-top:  none;  
+    border-left:  none;
+    border-bottom:none;
+}
+.six{
+    border: solid 1px rgba(0,0,0,0.5);
+    border-top:  none;  
+    border-left:  none;
+    border-bottom:none; 
+    border-right: none; 
+}
+.o{
+    margin: 20px 0;
+}
+.Write{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 20px;
+    
+}
+.n{
+    display: block;
+    margin-right: 100%;
+}
+    .block{
+        display: flex;
+        width:100%;
+        
+    }
+    .qq{
+        
+        height: 20px;
+        
+        width:97%;
+    }
+    .in{
+        width: 97%;
+    }
+    .vq{
+        margin:0 10px;
+    }
+    .rad{
+        margin-top: 50px;
+        
+        
+    }
+    select{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .textarea{
+       width: 100%;
+       
+    }
+
+    form button{
+        width: 75px;
+        border-radius: 4px;
+        height: 35px;
+        opacity:0.5;
+        background: none;
+        border: 1px black solid;
+        margin-left: 80%;
+        margin-bottom: 5px;
+    }
+    form{
+        border-bottom: rgba(0,0,0,0.5) 1px solid;
+    }
+
+    .last{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .last img{
+    margin: 0 2px;
+     height: 30px;
+     border:solid rgba(0,0,0,0.5) 1px;
+     border-radius: 50%;
+     padding: 5px;
+    }
+
+    .yy{
+        display: flex;
+        align-items: center;
+    }
+    .dog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        width:25% ;
+        height: 250px;
+        background:url(img/dog.jpg);
+        
+    }
+    
+     .dog span{
+         margin: 20px 0;
+         margin-top: 40px;
+         text-align: center;
+     }
+
+    .i{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    .gq{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        width:100%;
+        height:100%;
+        transition: 0.5s;
+    }
+  
+    .gq:hover{
+       
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+    @media (max-width: 849px) {
+        .vq{
+            margin:0 10px;
+            margin-right: 15px;
+        }
+      .ll li{
+         
+          margin: 0 20px;
+      }
+        .header{
+        display: flex;
+        align-items: center;
+          justify-content: center;
+        }
+        .right{
+         display: none;  
+         
+        }
+        .main{
+           display: flex;
+            justify-content: center;
+           align-items: center;
+          margin: 0 50px;
+          
+        }
+        
+        .main img{
+            height: 200px;
+            
+        }
+        .gallery{
+        justify-content: center;
+        align-items: center;
+        }
+        .com{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .yach{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+        }
+      
+        .in{
+            margin-top: 2px;
+            height: 20px;
+           width: 100%;
+        }
+        .ff{
+          text-align: left;
+        }
+        .one{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;
+            border-left:  none;
+        }
+        .two{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            border-right: none;  
+        }
+        .three{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            
+        }
+        .four{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            border-right: none; 
+        }
+        .five{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            border-bottom:none;
+        }
+        .six{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            border-bottom:none; 
+            border-right: none; 
+        }
+        textarea{
+            width: 100%;
+        }
+        .l button{
+          margin-bottom: 10px;
+        }
+        form{
+            width: 600px;
+      
+        }
+       
+        form button{
+        
+            height: 20px;
+            margin-left: 60%;
+        }
+        .Write{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+  
+            
+        }
+        .gg{
+            display: none;
+        }
+        .yy label{
+            width: 150px;
+        }
+        
+     }
+
+
+
+
+     @media (max-width: 849px) {
+        .main{
+            display: flex;
+             justify-content: center;
+            align-items: center;
+           margin: 0 10px;
+           
+         }
+     }
+     
+
+
+
+
+
+
+
+
+
+     @media (max-width: 600px) {
+      
+        .header{
+            display: flex;
+          align-items: start;
+          justify-content: start;
+        }
+        .right{
+         margin: 0;  
+         display: none;
+        }
+        .main{
+            margin: 0 ;
+            margin-bottom: 15px;
+           display: flex;
+            justify-content: center;
+           align-items: center;
+           flex-direction: column;
+          
+          
+        }
+        .l{
+            justify-content: center;
+            
+        }
+        .vv{
+            flex-direction: column-reverse;
+        }
+        .main img{
+            height: 200px;
+            
+        }
+        .gallery{
+        justify-content: center;
+        align-items: center;
+        }
+        .com{
+            display: flex;
+            flex-wrap: wrap;
+           margin-right: 50px;
+            
+        }
+        .yach{
+            
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+        }
+        
+        .in{
+            margin-top: 2px;
+            height: 20px;
+           width:100%;
+        }
+        .ff{
+          display: flex;
+          flex-direction: column;
+        }
+        .one{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;
+            border-left:  none;
+            border-right: none; 
+        }
+        .two{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            border-right: none;  
+        }
+        .three{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            border-right: none; 
+        }
+        .four{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            border-right: none; 
+        }
+        .five{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            border-right: none; 
+        }
+        .six{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-top:  none;  
+            border-left:  none;
+            
+            border-right: none; 
+        }
+        textarea{
+            width: 100%;
+        }
+        
+        .l button{
+          margin-bottom: 10px;
+        }
+        form{
+            justify-content: center;
+            align-items: center;
+           width: 80%;
+        }
+       
+        form button{
+        
+            height: 20px;
+            margin-left: 60%;
+        }
+        .Write{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+  
+            
+        }
+        .rad{
+            margin-top: 35px;
+        }
+        .gg{
+            display: none;
+        }
+        .pp{
+            display: none;
+        }
+        .ll{
+            display: none;
+        }
+        .vq{
+            margin: 30px 0;
+        }
+        .rr{
+            margin-top: 15px;
+        }
+     }
+    

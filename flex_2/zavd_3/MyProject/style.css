@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: rgb(43, 226, 171);
+    position: static;
+}
+.slot{
+display: flex;
+  margin-top: 100px;
+
+ 
+width: 2000px;
+}
+section{
+    height: 100%;
+    background: rgb(43, 226, 171);
+
+    
+}
+header{
+    padding-left: 20px;
+    width: 100%;
+    background: rgb(29, 138, 105);
+    position: fixed;
+    bottom: 90%;
+   
+}
+.Desk{
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    padding: 15px;
+    margin: 0 15px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+.com{
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+   background: white;
+   margin: 5px 0px;
+  
+}
+.bot{
+    display: flex;
+    align-items: center;
+    
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+   
+    width: 90%;
+}
+img{
+    height: 30px;
+}
+.left img{
+    height: 15px;
+   
+}
+.aa{
+    margin-left: 30px;
+}
