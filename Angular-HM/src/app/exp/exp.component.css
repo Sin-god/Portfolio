@@ -1,0 +1,47 @@
+p{
+    height: 5px;
+}
+input{
+   display: block;
+}
+#smoll{
+    width: 35px;
+}
+#left{
+    border: solid rgb(194, 194, 194) 1px;
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 7px;
+   background-color: rgb(245, 245, 245);
+   z-index: 1;
+   margin-right: 50px;
+   width: 170px;
+   height: 200px;
+}
+section{
+    display: flex;
+   justify-content: center;
+}
+
+#right{
+    background-color: rgba(235, 235, 235, 0.4);
+    width: 500px;
+    height: 250px;
+    border: solid rgb(194, 194, 194) 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-radius: 7px;
+    position: relative;
+    right: 200px;
+    
+}
+#black-line{
+    margin-top: 50px;
+    width: 500px;
+    height: 40px;
+    background-color: black;
+}
+#cvc{
+    margin-right: 70px;
+}

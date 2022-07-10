@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Формы в React</title>
+</head>
+<body>
+    <div id="app"></div>
+    <a href="page2.html">страница 2</a>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        
+    <script type="text/babel">
+    class UserForm extends React.Component {
+      constructor(props) {
+        super(props);
+        var num = props.num;
+        var numIsValid = this.validateNum(num);
+        var date = props.date;
+        var dateIsValid = this.validateDate(date);
+        var cod = props.cod
+        var codIsValid = this.validateCod(cod)
+        this.state = {num: num, date: date, cod: cod, numValid:numIsValid,dateValid: dateIsValid ,codValid: codIsValid};
+   
+        this.onNumChange = this.onNumChange.bind(this);
+        this.onDateChange = this.onDateChange.bind(this);
+        this.onCodChange = this.onCodChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+        validateDate(date){
+           date = date.split("/")
+            console.log(date)
+            if(date[1]<=31&&date[0]>0&&date[1]>0&&date[0]<=12)
+            return   date.join('/').length >=4 || date.join('/').length <=5 ;
+        }
+        validateNum(num){
+            return num.length == 16 && num.match(/\D/) == null;
+        }
+        validateCod(cod){
+            return cod.length == 3 && cod.match(/\D/) == null  ;
+        }
+        onDateChange(e) {
+            var val = e.target.value;
+            var valid = this.validateDate(val);
+            this.setState({date: val,dateValid: valid});
+        }
+        onNumChange(e) {
+            var val = e.target.value;
+            console.log(val);
+            var valid = this.validateNum(val);
+            this.setState({num: val, numValid: valid});
+        }
+        onCodChange(e) {
+            var val = e.target.value;
+            console.log(val);
+            var valid = this.validateCod(val);
+            this.setState({cod: val, codValid: valid});
+        }
+   
+        handleSubmit(e) {
+            e.preventDefault();
+            if(this.state.numValid ===true && this.state.dateValid===true && this.state.codValid===true){
+                alert("Форма успешно заполнена");
+            }
+        }
+   
+        render() {
+            var numColor = this.state.numValid===true?"green":"red";
+            var dateColor = this.state.dateValid===true?"green":"red";
+            var codColor = this.state.codValid===true?"green":"red";
+
+    
+            return (
+                <form onSubmit={this.handleSubmit}>
+                    <p>
+                        <label>Номер:</label><br />
+                        <input type="text" value={this.state.num} 
+                            onChange={this.onNumChange} style={{borderColor:numColor}} />
+                    </p>
+                    <p>
+                        <label>Дата:</label><br />
+                        <input type="text" value={this.state.date} 
+                            onChange={this.onDateChange}  style={{borderColor:dateColor}} />
+                    </p>
+                    <p>
+                        <label>Ключ:</label><br />
+                        <input type="text" value={this.state.cod} 
+                            onChange={this.onCodChange} style={{borderColor:codColor}} />
+                    </p>
+                    <input type="submit" value="Отправить" id="btn"/>
+                   
+                </form>
+            );
+        }
+    }
+    ReactDOM.render(
+        <UserForm num="1234567891234567" date="3/24" cod="013"/>,
+        document.getElementById("app")
+    )
+    
+    </script>
+</body>
+</html>

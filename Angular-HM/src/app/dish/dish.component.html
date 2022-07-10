@@ -1,0 +1,52 @@
+
+
+<button (click)="pershe = !pershe">Борщ</button>
+<button (click)="second = !second">Макароны</button>
+<button (click)="trete = !trete">Творог</button>
+
+<div *ngIf='pershe;'>
+    <ul>
+        <hr>
+        <li *ngFor="let dish of dishs" [ngSwitch]="dish.id">
+            <p *ngSwitchCase="'1'">{{dish.name}}</p>
+            <p *ngSwitchCase="'1'">{{dish.compound}}</p>
+            <p *ngSwitchCase="'1'">{{dish.sequence}}</p>
+           
+        </li>  
+        <img src="assets/borshch.jpg" alt="">
+        
+        </ul>
+
+        
+
+</div>
+<div *ngIf='second;'>
+    <ul>
+        <hr>
+        <li *ngFor="let dish of dishs" [ngSwitch]="dish.id">
+            <p *ngSwitchCase="'2'">{{dish.name}}</p>
+            <p *ngSwitchCase="'2'">{{dish.compound}}</p>
+            <p *ngSwitchCase="'2'">{{dish.sequence}}</p>
+            
+        </li>   
+       <img src="assets/makarons.jpg" alt="">
+        </ul>
+
+        
+
+</div>
+<div *ngIf='trete;'>
+    <ul>
+        <hr>
+        <li *ngFor="let dish of dishs" [ngSwitch]="dish.id">
+            <p *ngSwitchCase="'3'">{{dish.name}}</p>
+            <p *ngSwitchCase="'3'">{{dish.compound}}</p>
+            <p *ngSwitchCase="'3'">{{dish.sequence}}</p>
+            
+        </li>   
+       <img src="assets/tvorog.jpg" alt="">
+        </ul>
+
+        
+
+</div>
